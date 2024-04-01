@@ -93,7 +93,6 @@ ingress {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    cidr_blocks = ["10.0.20.0/24","10.0.21.0/24"] 
     # Allow traffic from private subnets
     security_groups = [aws_security_group.stack-sg.id] 
     
@@ -101,8 +100,7 @@ ingress {
   ingress {
     from_port   = 80
     to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["10.0.20.0/24","10.0.21.0/24"]   
+    protocol    = "tcp" 
     # Allow traffic from private subnets
     security_groups = [aws_security_group.stack-sg.id] 
   }
@@ -111,7 +109,6 @@ ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["10.0.20.0/24","10.0.21.0/24"] 
     security_groups = [aws_security_group.stack-sg.id] 
    
   }
@@ -120,7 +117,6 @@ ingress {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = ["10.0.20.0/24","10.0.21.0/24"] 
     security_groups = [aws_security_group.stack-sg.id]   
     
 
@@ -130,7 +126,6 @@ ingress {
     from_port         = -1   # ICMP type (any)
     to_port           = -1   # ICMP code (any)
     protocol          = "icmp" 
-    cidr_blocks = ["10.0.20.0/24","10.0.21.0/24"] 
     security_groups = [aws_security_group.stack-sg.id] 
     # Allow traffic from private subnets
   }
