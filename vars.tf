@@ -1,6 +1,6 @@
-variable "AWS_ACCESS_KEY" {}
-variable "AWS_SECRET_KEY" {}
-variable "AWS_REGION" {}
+# variable "AWS_ACCESS_KEY" {}
+# variable "AWS_SECRET_KEY" {}
+# variable "AWS_REGION" {}
 
 
 variable "environment" {
@@ -69,17 +69,17 @@ variable "subnet_id" {
 
 
 
-variable "DB_USER" {}
+# variable "DB_USER" {}
 
-variable "DB_PASS" {}
+# variable "DB_PASS" {}
 
-variable "DB_NAME" {}
+# variable "DB_NAME" {}
 
-variable "DB_USER1" {}
+# variable "DB_USER1" {}
 
-variable "DB_PASSWORD" {}
+# variable "DB_PASSWORD" {}
 
-variable "DB_NAME1" {}
+# variable "DB_NAME1" {}
 
 variable "MOUNT_POINT" {
   default="/var/www/html"
