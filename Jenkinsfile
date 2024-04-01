@@ -9,9 +9,9 @@ pipeline {
                  sh "terraform init"
         }
          }
-         stage('terraform plan'){
+         stage('terraform destroy'){
              steps {
-                 sh "terraform plan"
+                 sh "terraform destroy"
          }
          }
     }
