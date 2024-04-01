@@ -4,16 +4,16 @@ pipeline {
         PATH = "${PATH}:${getTerraformPath()}"
     }
     stages{
-        //  stage('terraform init'){
-        //      steps {
-        //          sh "terraform init"
-        // }
-        //  }
-         stage('terraform destroy'){
+         stage('terraform init'){
              steps {
-                 sh "terraform destroy --auto-approve"
+                 sh "terraform init -reconfigure"
+        }
          }
-         }
+        //  stage('terraform destroy'){
+        //      steps {
+        //          sh "terraform destroy --auto-approve"
+        //  }
+        //  }
     }
 }
 def getTerraformPath(){
