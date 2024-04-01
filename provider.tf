@@ -1,5 +1,5 @@
 provider "aws" {
-  region = local.creds.AWS_REGION
+  region = us-east-1
 
 
 
