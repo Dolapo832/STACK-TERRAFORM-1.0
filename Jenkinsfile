@@ -11,7 +11,7 @@ pipeline {
          }
          stage('terraform force-unlock 9ad38819-3e15-fd5a-23fe-e10c433a86d4'){
              steps {
-                 sh "terraform force-unlock 9ad38819-3e15-fd5a-23fe-e10c433a86d4 --auto-approve "
+                 sh "terraform force-unlock 9ad38819-3e15-fd5a-23fe-e10c433a86d4 "
          }
          }
     }
